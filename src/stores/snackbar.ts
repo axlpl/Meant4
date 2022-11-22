@@ -9,7 +9,7 @@ export const useSnackbar = defineStore("snackbar", {
       state.message.length ? state.message[state.message.length - 1] : "",
   },
   actions: {
-    async changeMessage(payload: string) {
+    changeMessage(payload: string) {
       this.message.push(payload);
     },
   },
