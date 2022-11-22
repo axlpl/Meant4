@@ -1,0 +1,20 @@
+{
+  "ContactForm": {
+    "Title": "Contact us",
+    "Name": "Name",
+    "Email": "E-mail",
+    "Subject": "Subject",
+    "Message": "Message",
+    "EnterContactData": "Please enter contact data.",
+    "ResetForm": "Reset form",
+    "Submit": "Send email",
+    "Success": "Message was sent.",
+    "Failed": "Message has not been sent."
+  },
+  "Rules": {
+    "MinLength": "Miniumum {size} characters.",
+    "MaxLength": "Maximum {size} characters.",
+    "isRequired": "This field is required.",
+    "Email": "Please enter valid e-mail."
+  }
+}
