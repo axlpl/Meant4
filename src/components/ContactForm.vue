@@ -57,6 +57,7 @@ async function handleSubmit(payload) {
             <v-row>
               <v-col class="pl-md-0" cols="12" md="6">
                 <v-text-field
+                  id="cotanct-form-name"
                   v-model="name"
                   class="mb-2"
                   :rules="[
@@ -70,6 +71,7 @@ async function handleSubmit(payload) {
                   required
                 ></v-text-field>
                 <v-text-field
+                  id="cotanct-form-email"
                   v-model="email"
                   class="mb-2"
                   :rules="[isRequired, validEmail]"
@@ -78,6 +80,7 @@ async function handleSubmit(payload) {
                   required
                 ></v-text-field>
                 <v-text-field
+                  id="cotanct-form-subject"
                   v-model="subject"
                   :rules="[maxLength(CONTACT_SUBJECT_MAX_LENGTH)]"
                   :counter="CONTACT_SUBJECT_MAX_LENGTH"
@@ -87,6 +90,7 @@ async function handleSubmit(payload) {
               </v-col>
               <v-col class="pr-md-0" cols="12" md="6">
                 <v-textarea
+                  id="cotanct-form-message"
                   v-model="message"
                   :label="$t('ContactForm.Message')"
                   class="contact-form__textarea"
@@ -116,6 +120,7 @@ async function handleSubmit(payload) {
             </v-col>
             <v-col cols="12" md="6">
               <v-btn
+                id="contact-submit"
                 block
                 size="large"
                 color="green"
